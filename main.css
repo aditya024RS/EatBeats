@@ -1,0 +1,336 @@
+:root {
+    --site-color-01: #a50737;
+    --site-color-hover: #69002b;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #1d1d1d;
+}
+
+h1 {
+    font-size: 8.6rem;
+    line-height: 1.1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 7.6rem;
+    line-height: 1.25;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-size: 6.6rem;
+    line-height: 1.25;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 1.75;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    font-size: 1.8rem;
+    line-height: 1.75;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(images/fab-hover.png) url(images/inta-hover.png);
+}
+
+.wrapper-main {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.wrapper-main-about-us {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.index-header {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+.index-header-ln {
+    display: flex;
+    height: 100%;
+    padding-left: 60px;
+}
+
+.index-header-logo {
+    width: 90px;
+    height: 40px;
+    background-image: url(images/pngwing.com.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: center;
+}
+
+.index-header-nav {
+    padding-left: 40px;
+    width: fit-content;
+    height: 100%;
+}
+
+.index-header-nav ul li {
+    display: inline;
+    float: left;   
+}
+
+.index-header-nav ul li a {
+    padding: 0 10px;
+    line-height: 60px;
+    font-weight: 500;
+    color: #000;
+    display: block;
+    height: 100%;
+
+}
+
+.index-header-nav ul li a:hover {
+    color: var(--site-color-hover);
+    border-bottom: 2px solid var(--site-color-01);
+    transition: all 200ms ease-in-out;
+}
+
+.index-header-sm {
+    width: fit-content;
+    height: 100%;
+    padding-right: 60px;
+    align-items: center;
+    column-gap: 10px;
+    display: flex;
+}
+
+.index-header-sm-fb {
+    width: 30px;
+    height: 30px;
+    background-image: url(images/fab-bw.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.index-header-sm-fb:hover {
+    background-image: url(images/fab-hover.png);
+    transition: all 200ms ease-in-out;
+}
+
+.index-header-sm-in {
+    width: 30px;
+    height: 30px;
+    background-image: url(images/in-bw.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.index-header-sm-in:hover {
+    background-image: url(images/inta-hover.png);
+    transition: all 200ms ease-in-out;
+}
+
+
+/*Contact us Section*/
+
+.index-contact-us {
+    width: 100%;
+    height: calc(100vh - 60px);
+    padding: 60px 0;
+    background-image: url(images/contact-bg-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.index-contact-us h3 {
+    font-size: 4.6rem;
+    padding-left: 150px;
+    padding-bottom: 20px;
+}
+
+.index-contact-form {
+    width: 800px;
+    background-image: url(images/contact-form.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.index-contact-us form {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+
+}
+
+.index-contact-us form {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.index-contact-us form input {
+    height: 40px;
+    flex-basis: 100%;
+    margin: 0 100px;
+    font-size: 2rem;
+    padding: 0 10px;
+}
+
+.index-contact-us form input:hover, .index-contact-us form textarea:hover {
+    border: 2px solid var(--site-color-hover);
+    border-radius: 4px;
+    
+}
+
+.index-contact-us form textarea {
+    height: 120px;
+    margin: 0 100px;
+    flex-basis: 100%;
+    font-size: 2rem;
+    resize: vertical;
+    padding: 0 10px;
+}
+
+.index-contact-us form label {
+    font-size: 2.2rem;
+    margin-left: 100px;
+}
+
+.index-contact-us form button {
+    margin-left: 100px;
+    font-size: 1.8rem;
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    border-radius: 8px;
+    border: 1px solid #1e1e1e;
+    background-color: var(--site-color-01);
+    border: 2px solid grey;
+    margin-bottom: 20px;
+}
+
+.index-contact-us form button:hover {
+    border: 2px solid var(--site-color-hover);
+}
+
+
+/*Footer Section*/
+
+footer .index-footer-box {
+    padding: 60px 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-footer-testimony-holder {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.index-footer-testimony {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-footer-testimony img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.index-footer-testimony p {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.index-footer-write-a-review {
+    margin: 60px 0;
+    width: fit-content;
+    padding: 10px 20px;
+    display: block;
+    padding: 10px 20px;
+    background-color: var(--site-color-01);
+    border: 2px solid var(--site-color-hover);
+}
+
+.index-footer-write-a-review:hover {
+    background-color: var(--site-color-hover);
+    transition: all 200ms ease-in-out;
+    border: 2px solid var(--site-color-01);
+}
+
+.index-footer-sitemap {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.index-footer-sitemap ul:nth-child(1) a, .index-footer-sitemap ul:nth-child(2) a {
+    color: gold;
+}
+
+.index-footer-sitemap ul:nth-child(2) {
+    padding-left: 60px;
+}
+
+.index-footer-sitemap ul:nth-child(3) {
+    max-width: 455px;
+    padding-left: 60px;
+}
+
+.index-footer-sitemap ul:nth-child(4) {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.index-footer-sitemap ul:nth-child(1) a:hover, .index-footer-sitemap ul:nth-child(2) a:hover {
+    opacity: 0.5;
+    transition: all 100ms ease-in-out;
+}
+
+.index-footer-copyright {
+    flex-basis: 100%;
+    margin-top: 60px;
+    text-align: center;
+    opacity: 0.5;
+}
